@@ -2,4 +2,5 @@ Flask==1.1.1
 pandas
 pylint
 jsonify
+google-cloud-automl
 google-cloud-language
