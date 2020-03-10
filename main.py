@@ -3,7 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 
 project_id = 'production-268923'
-# compute_region = 'COMPUTE_REGION_HERE'
+compute_region = 'Global'
 model_display_name = 'model_prep_20200229090512'
 inputs = {'trip_seconds': 600,'trip_miles': 4,'payment_type': 'Cash','company': 'Flash Cab', 'pickup_location': 'POINT (-87.7215590627 41.968069)','dropoff_location': 'POINT (-87.7215590627 41.968069)'}
 
