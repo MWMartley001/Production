@@ -3,9 +3,9 @@ from google.cloud import automl_v1beta1 as automl
 app = Flask(__name__)
 
 project_id = 'production-268923'
-compute_region = 'Global'
-model_display_name = 'model_prep_20200229090512'
-inputs = {'trip_seconds': 600,'trip_miles': 4,'payment_type': 'Cash','company': 'Flash Cab', 'pickup_location': 'POINT (-87.7215590627 41.968069)','dropoff_location': 'POINT (-87.7215590627 41.968069)'}
+compute_region = 'us-central1'
+model_display_name = 'model_prep_20200310053214'
+inputs = {'trip_seconds': 600,'trip_miles': 4}
 
 client = automl.TablesClient(project=project_id, region=compute_region)
 
@@ -17,7 +17,7 @@ def results():
     print("Prediction results:")
     for result in response.payload:
         print(
-            "Prediction: {}".format(result.tables.value.string_value)
+            "Prediction: {}".format(result.tables.value)
         )
 
     
