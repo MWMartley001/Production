@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/MWMartley001/Production.svg?style=svg)](https://circleci.com/gh/MWMartley001/Production)
 
-This is a repo for a Chicago taxi fare prediction application. Further refinements can be implemented and a user can input trip distance and estimated time in seconds (or they can enter minutes and the code converts to seconds) to receive an estimated ride fare. 
+This is a repo for a Chicago taxi fare prediction application. Further refinements can be implemented so a user can input trip distance and estimated time in seconds (or they can enter minutes and the code converts to seconds) to receive an estimated ride fare. To enable this basic front end development is required. 
 
 The model for prediction was built in the GCP AutoML application. The data for building the model was retrieved from BigQuery and preprocessed using Dataflow and ingested into GCP Tables. 
 
